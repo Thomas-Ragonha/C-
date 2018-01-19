@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPFMessingArround
+namespace WPFMessingArround.Pages
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Interaction logic for ExpenseReportPage.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class ExpenseReportPage : Page
     {
-        public MainWindow()
+        public ExpenseReportPage()
         {
             InitializeComponent();
         }
