@@ -1,0 +1,15 @@
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\bin\Debug\WPFMessingArround.exe.config
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\bin\Debug\WPFMessingArround.exe
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\bin\Debug\WPFMessingArround.pdb
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\WPFMessingArround.csprojResolveAssemblyReference.cache
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\MainWindow.g.cs
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\App.g.cs
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\WPFMessingArround_MarkupCompile.cache
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\WPFMessingArround_MarkupCompile.lref
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\MainWindow.baml
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\WPFMessingArround.g.resources
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\WPFMessingArround.Properties.Resources.resources
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\WPFMessingArround.csproj.GenerateResource.Cache
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\WPFMessingArround.csproj.CoreCompileInputs.cache
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\WPFMessingArround.exe
+C:\Users\thomas.rivera\Desktop\C#\WPF\WPFMessingArround\WPFMessingArround\obj\Debug\WPFMessingArround.pdb
