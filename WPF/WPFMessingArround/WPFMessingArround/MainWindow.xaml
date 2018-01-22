@@ -1,5 +1,0 @@
-﻿<NavigationWindow x:Class="WPFMessingArround.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Messing Arround" Height="350" Width="500" Source="ExpenseItHome.xaml">
-</NavigationWindow>
