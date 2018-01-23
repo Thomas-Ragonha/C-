@@ -39,53 +39,53 @@ namespace SWDice
         }
 
 
-        public int DefineQuantidadeDeDados(string comandoRolagem)
-        {
-            if (comandoRolagem[0] == '/' && comandoRolagem[1] == 'r')
-            {
-                string[] caracteresRolagem = comandoRolagem.Split(default(char[]) , StringSplitOptions.RemoveEmptyEntries);
-                string[] ComposicaoRolagem = caracteresRolagem[1].Split('d');
-                int numeroValidado;
-                int quantidadeDeDados;
-                if (int.TryParse(ComposicaoRolagem[0], out numeroValidado))
-                {
-                    quantidadeDeDados = int.Parse(ComposicaoRolagem[0]);
-                    return quantidadeDeDados;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-            else
-            {
-                return 0;
-            }
-        }
+        //public int DefineQuantidadeDeDados(string comandoRolagem)
+        //{
+        //    if (comandoRolagem[0] == '/' && comandoRolagem[1] == 'r')
+        //    {
+        //        string[] caracteresRolagem = comandoRolagem.Split(default(char[]) , StringSplitOptions.RemoveEmptyEntries);
+        //        string[] ComposicaoRolagem = caracteresRolagem[1].Split('d');
+        //        int numeroValidado;
+        //        int quantidadeDeDados;
+        //        if (int.TryParse(ComposicaoRolagem[0], out numeroValidado))
+        //        {
+        //            quantidadeDeDados = int.Parse(ComposicaoRolagem[0]);
+        //            return quantidadeDeDados;
+        //        }
+        //        else
+        //        {
+        //            return 0;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        return 0;
+        //    }
+        //}
 
-        public int DefineFaceDosDados(string comandoRolagem)
-        {
-            if (comandoRolagem[0] == '/' && comandoRolagem[1] == 'r')
-            {
-                string[] caracteresRolagem = comandoRolagem.Split(default(char[]), StringSplitOptions.RemoveEmptyEntries);
-                string[] ComposicaoRolagem = caracteresRolagem[1].Split('d');
-                int numeroValidado;
-                int faces;
-                if (int.TryParse(ComposicaoRolagem[1], out numeroValidado))
-                {
-                    faces = int.Parse(ComposicaoRolagem[1]);
-                    return faces;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-            else
-            {
-                return 0;
-            }
-        }
+        //public int DefineFaceDosDados(string comandoRolagem)
+        //{
+        //    if (comandoRolagem[0] == '/' && comandoRolagem[1] == 'r')
+        //    {
+        //        string[] caracteresRolagem = comandoRolagem.Split(default(char[]), StringSplitOptions.RemoveEmptyEntries);
+        //        string[] ComposicaoRolagem = caracteresRolagem[1].Split('d');
+        //        int numeroValidado;
+        //        int faces;
+        //        if (int.TryParse(ComposicaoRolagem[1], out numeroValidado))
+        //        {
+        //            faces = int.Parse(ComposicaoRolagem[1]);
+        //            return faces;
+        //        }
+        //        else
+        //        {
+        //            return 0;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        return 0;
+        //    }
+        //}
 
         public int[] DefineParametrosDaRolagem(string comandoRolagem)
         {
@@ -106,6 +106,16 @@ namespace SWDice
 
             return retorno;
 
+        }
+
+        public int[] Rolar(int[] parametros, Random rng)
+        {
+            int[] rolagem = new int[parametros[0]];
+            for (int i = 0; i < parametros[0]; i++)
+            {
+                rolagem[i] = rng.Next(1, parametros[1]+1);
+            }
+            return rolagem;
         }
 
 

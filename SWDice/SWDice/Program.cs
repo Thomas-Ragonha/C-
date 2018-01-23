@@ -12,22 +12,14 @@ namespace SWDice
         {
             Dice dice = new Dice();
             string comando = Console.ReadLine().ToLower();
-            dice.DefineQuantidadeDeDados(comando);
-            dice.Sides = dice.DefineFaceDosDados(comando);
+            Random rng = new Random();
 
-            int[] resultado = dice.DefineParametrosDaRolagem(comando);
+            int[] resultadoRolagem = dice.Rolar(dice.DefineParametrosDaRolagem(comando), rng);
 
-
-            Console.WriteLine(dice.DefineQuantidadeDeDados(comando));
-            Console.WriteLine(dice.Sides);
-
-            foreach (var item in resultado)
+            foreach (var x in resultadoRolagem)
             {
-                Console.Write(item +" ");
+                Console.Write(x + " ");
             }
-
-
-
 
             Console.Read();
         }
