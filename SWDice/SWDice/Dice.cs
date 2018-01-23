@@ -21,6 +21,7 @@ namespace SWDice
 
             set
             {
+
                sides = value;
             }
         }
@@ -42,7 +43,7 @@ namespace SWDice
         {
             if (comandoRolagem[0] == '/' && comandoRolagem[1] == 'r')
             {
-                string[] caracteresRolagem = comandoRolagem.Split();
+                string[] caracteresRolagem = comandoRolagem.Split(default(char[]) , StringSplitOptions.RemoveEmptyEntries);
                 string[] ComposicaoRolagem = caracteresRolagem[1].Split('d');
                 int numeroValidado;
                 int quantidadeDeDados;
@@ -66,7 +67,7 @@ namespace SWDice
         {
             if (comandoRolagem[0] == '/' && comandoRolagem[1] == 'r')
             {
-                string[] caracteresRolagem = comandoRolagem.Split();
+                string[] caracteresRolagem = comandoRolagem.Split(default(char[]), StringSplitOptions.RemoveEmptyEntries);
                 string[] ComposicaoRolagem = caracteresRolagem[1].Split('d');
                 int numeroValidado;
                 int faces;
