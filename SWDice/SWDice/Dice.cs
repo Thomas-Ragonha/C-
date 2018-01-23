@@ -94,7 +94,7 @@ namespace SWDice
             int numeroValidado;
             int quantidadeDeDados;
             int faces;
-            int[] retorno = new int[] {0,0 };
+            int[] retorno = new int[] {0,0};
             if (int.TryParse(ComposicaoRolagem[0], out numeroValidado))
             {
                 retorno[0] = int.Parse(ComposicaoRolagem[0]);
@@ -108,12 +108,27 @@ namespace SWDice
 
         }
 
-        public int[] Rolar(int[] parametros, Random rng)
+        public List<string> Rolar(int[] parametros, Random rng)
         {
-            int[] rolagem = new int[parametros[0]];
+            List<string> rolagem = new List<string>();
+            int dadosParaEstouro = 0;
             for (int i = 0; i < parametros[0]; i++)
             {
-                rolagem[i] = rng.Next(1, parametros[1]+1);
+                rolagem.Add(rng.Next(1, parametros[1] + 1).ToString());
+                if(Convert.ToInt32(rolagem[i]) == parametros[1])
+                {
+                    dadosParaEstouro++;
+                }
+            }
+            while (dadosParaEstouro > 0)
+            {
+                string a = rng.Next(1, parametros[1] + 1).ToString();
+                rolagem.Add(a + "!");
+                if (Convert.ToInt32(a) == parametros[1])
+                {
+                    dadosParaEstouro++;
+                }
+                dadosParaEstouro--;
             }
             return rolagem;
         }

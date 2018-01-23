@@ -10,13 +10,23 @@ namespace SWDice
     {
         static void Main(string[] args)
         {
-            Dice dice = new Dice();
+            Dice dadoDoJogador = new Dice();
+            Dice dadoSelvagem = new Dice();
             string comando = Console.ReadLine().ToLower();
             Random rng = new Random();
+            int[] d6 = new int[] { 1, 6 };
 
-            int[] resultadoRolagem = dice.Rolar(dice.DefineParametrosDaRolagem(comando), rng);
+            List<string> resultadoRolagem = dadoDoJogador.Rolar(dadoDoJogador.DefineParametrosDaRolagem(comando), rng);
+            List<string> resultadoRolagemDadoSelvagem = dadoSelvagem.Rolar(d6, rng);
 
             foreach (var x in resultadoRolagem)
+            {
+                Console.Write(x + " ");
+            }
+
+            Console.Write("\n");
+
+            foreach (var x in resultadoRolagemDadoSelvagem)
             {
                 Console.Write(x + " ");
             }
