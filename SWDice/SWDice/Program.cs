@@ -10,17 +10,15 @@ namespace SWDice
     {
         static void Main(string[] args)
         {
-            int sides;
-            if (int.TryParse(Console.ReadLine(), out sides))
-            {
-                Dice dice = new Dice(sides);
-                Console.WriteLine(dice.Sides);
-            }
-            else
-            {
-                Console.WriteLine("Inválido!");
-            }
+            Dice dice = new Dice();
+            string comando = Console.ReadLine().ToLower();
+            dice.DefineQuantidadeDeDados(comando);
+            dice.Sides = dice.DefineFaceDosDados(comando);
 
+
+            Console.WriteLine(dice.DefineQuantidadeDeDados(comando));
+            Console.WriteLine(dice.Sides);
+            
             Console.Read();
         }
     }
