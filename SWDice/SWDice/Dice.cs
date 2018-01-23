@@ -87,6 +87,27 @@ namespace SWDice
             }
         }
 
+        public int[] DefineParametrosDaRolagem(string comandoRolagem)
+        {
+            string[] caracteresRolagem = comandoRolagem.Split(default(char[]), StringSplitOptions.RemoveEmptyEntries);
+            string[] ComposicaoRolagem = caracteresRolagem[1].Split('d');
+            int numeroValidado;
+            int quantidadeDeDados;
+            int faces;
+            int[] retorno = new int[] {0,0 };
+            if (int.TryParse(ComposicaoRolagem[0], out numeroValidado))
+            {
+                retorno[0] = int.Parse(ComposicaoRolagem[0]);
+            }
+            if (int.TryParse(ComposicaoRolagem[1], out numeroValidado))
+            {
+                retorno[1] = int.Parse(ComposicaoRolagem[1]);
+            }
+
+            return retorno;
+
+        }
+
 
     }
 }

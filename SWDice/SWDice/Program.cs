@@ -15,10 +15,20 @@ namespace SWDice
             dice.DefineQuantidadeDeDados(comando);
             dice.Sides = dice.DefineFaceDosDados(comando);
 
+            int[] resultado = dice.DefineParametrosDaRolagem(comando);
+
 
             Console.WriteLine(dice.DefineQuantidadeDeDados(comando));
             Console.WriteLine(dice.Sides);
-            
+
+            foreach (var item in resultado)
+            {
+                Console.Write(item +" ");
+            }
+
+
+
+
             Console.Read();
         }
     }
