@@ -38,9 +38,13 @@ namespace ChamadosLM.Classes
             sqlCommand = sqlCon.CreateCommand();
             sqlCommand.CommandText = query;
             SQLiteDataReader sqReader = sqlCommand.ExecuteReader();
+            string dt;
             while (sqReader.Read())
             {
-                string a = sqReader.GetString(0);
+                dt = sqReader[1].ToString();
+                dt = sqReader[2].ToString();
+                dt = sqReader[0].ToString();
+                dt = sqReader[2].ToString();
             }
             sqlCommand.ExecuteNonQuery();
             sqlCon.Close();
