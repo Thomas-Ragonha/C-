@@ -25,12 +25,19 @@ namespace ChamadosLM
             usuario.NomeUsuario = txtUsuario.Text;
             usuario.Senha = txtSenha.Text;
             ConectaDB db = new ConectaDB();
-            db.VerificaUsuario("select * from Usuarios where NomeUsuario ='" + usuario.NomeUsuario + "'" + "and Senha = '" + usuario.Senha + "'");
+            if(db.VerificaUsuario("select * from Usuarios where NomeUsuario ='" + usuario.NomeUsuario + "'" + "and Senha = '" + usuario.Senha + "'"))
+            {
+                this.Hide();
+                Home home = new Home();
+                home.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                this.Close();
+            }
 
-            this.Hide();
-            Home home = new Home();
-            home.ShowDialog();
-            this.Close();
+            
         }
     }
 }
