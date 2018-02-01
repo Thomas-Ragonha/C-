@@ -85,5 +85,16 @@ namespace SWDice
             return resultado;
         }
 
+        public List<string> VerificaExplosao(string comando, List<string> listaDeResultado)
+        {
+            foreach (string x in listaDeResultado)
+            {
+                if(x == comando[1].ToString())
+                {
+
+                }
+            }
+        }
+
     }
 }
