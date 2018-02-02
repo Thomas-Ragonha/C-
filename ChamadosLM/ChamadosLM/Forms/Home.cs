@@ -1,26 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChamadosLM.Classes;
 
 namespace ChamadosLM.Forms
 {
     public partial class Home : Form
     {
-        public Home()
+        private Usuarios usuarioLogado { get; set; }
+
+        public Home(Usuarios usuario)
         {
             InitializeComponent();
+            usuarioLogado = usuario;
         }
 
         private void btnNovoChamado_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CriarChamado criarChamado = new CriarChamado();
+            CriarChamado criarChamado = new CriarChamado(usuarioLogado);
             criarChamado.ShowDialog();
             this.Close();
         }

@@ -31,23 +31,29 @@ namespace ChamadosLM.Classes
             sqlCon.Close();
         }
 
-        public bool VerificaUsuario(string query)
+        public Usuarios VerificaUsuario(string query)
         {
             SetConnection();
             sqlCon.Open();
             sqlCommand = sqlCon.CreateCommand();
             sqlCommand.CommandText = query;
             SQLiteDataReader sqReader = sqlCommand.ExecuteReader();
-            //sqlCommand.ExecuteNonQuery();
+            Usuarios usuarioLogin = new Usuarios();
             if (sqReader.HasRows)
             {
+                while (sqReader.Read())
+                {
+                    usuarioLogin.ID = sqReader.GetInt32(0);
+                    usuarioLogin.NomeUsuario = sqReader.GetString(1);
+                    usuarioLogin.Senha = sqReader.GetString(2);
+                }
+                sqReader.Close();
                 sqlCon.Close();
-                return true;
+                return usuarioLogin;
             }
             else
             {
-                sqlCon.Close();
-                return false;
+                return usuarioLogin;
             }
         }
     }

@@ -21,14 +21,16 @@ namespace ChamadosLM
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Usuarios usuario = new Usuarios();
-            usuario.NomeUsuario = txtUsuario.Text;
-            usuario.Senha = txtSenha.Text;
+            Usuarios usuarioParaValidacao = new Usuarios();
+            Usuarios usuarioValidado = new Usuarios();
+            usuarioParaValidacao.NomeUsuario = txtUsuario.Text.ToUpper();
+            usuarioParaValidacao.Senha = txtSenha.Text;
             ConectaDB db = new ConectaDB();
-            if(db.VerificaUsuario("select * from Usuarios where NomeUsuario ='" + usuario.NomeUsuario + "'" + "and Senha = '" + usuario.Senha + "'"))
+            usuarioValidado = db.VerificaUsuario("select * from Usuarios where NomeUsuario ='" + usuarioParaValidacao.NomeUsuario + "'" + "and Senha = '" + usuarioParaValidacao.Senha + "'");
+            if (usuarioValidado.ID != 0)
             {
                 this.Hide();
-                Home home = new Home();
+                Home home = new Home(usuarioValidado);
                 home.ShowDialog();
                 this.Close();
             }
@@ -36,8 +38,6 @@ namespace ChamadosLM
             {
                 this.Close();
             }
-
-            
         }
     }
 }
