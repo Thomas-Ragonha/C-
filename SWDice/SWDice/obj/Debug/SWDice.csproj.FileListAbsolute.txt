@@ -1,0 +1,14 @@
+C:\Users\thomas.rivera\Documents\Visual Studio 2017\Projects\SWDice\SWDice\bin\Debug\SWDice.exe.config
+C:\Users\thomas.rivera\Documents\Visual Studio 2017\Projects\SWDice\SWDice\bin\Debug\SWDice.exe
+C:\Users\thomas.rivera\Documents\Visual Studio 2017\Projects\SWDice\SWDice\bin\Debug\SWDice.pdb
+C:\Users\thomas.rivera\Documents\Visual Studio 2017\Projects\SWDice\SWDice\obj\Debug\SWDice.csprojResolveAssemblyReference.cache
+C:\Users\thomas.rivera\Documents\Visual Studio 2017\Projects\SWDice\SWDice\obj\Debug\SWDice.csproj.CoreCompileInputs.cache
+C:\Users\thomas.rivera\Documents\Visual Studio 2017\Projects\SWDice\SWDice\obj\Debug\SWDice.exe
+C:\Users\thomas.rivera\Documents\Visual Studio 2017\Projects\SWDice\SWDice\obj\Debug\SWDice.pdb
+C:\Users\thomas.rivera\Desktop\C#\SWDice\SWDice\bin\Debug\SWDice.exe.config
+C:\Users\thomas.rivera\Desktop\C#\SWDice\SWDice\bin\Debug\SWDice.exe
+C:\Users\thomas.rivera\Desktop\C#\SWDice\SWDice\bin\Debug\SWDice.pdb
+C:\Users\thomas.rivera\Desktop\C#\SWDice\SWDice\obj\Debug\SWDice.csprojResolveAssemblyReference.cache
+C:\Users\thomas.rivera\Desktop\C#\SWDice\SWDice\obj\Debug\SWDice.csproj.CoreCompileInputs.cache
+C:\Users\thomas.rivera\Desktop\C#\SWDice\SWDice\obj\Debug\SWDice.exe
+C:\Users\thomas.rivera\Desktop\C#\SWDice\SWDice\obj\Debug\SWDice.pdb

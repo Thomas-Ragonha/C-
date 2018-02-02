@@ -1,0 +1,7 @@
+C:\Users\thomas.rivera\Desktop\C#\Udemy\UdemyCourse1\UdemyCourse1\bin\Debug\UdemyCourse1.exe.config
+C:\Users\thomas.rivera\Desktop\C#\Udemy\UdemyCourse1\UdemyCourse1\bin\Debug\UdemyCourse1.exe
+C:\Users\thomas.rivera\Desktop\C#\Udemy\UdemyCourse1\UdemyCourse1\bin\Debug\UdemyCourse1.pdb
+C:\Users\thomas.rivera\Desktop\C#\Udemy\UdemyCourse1\UdemyCourse1\obj\Debug\UdemyCourse1.csprojResolveAssemblyReference.cache
+C:\Users\thomas.rivera\Desktop\C#\Udemy\UdemyCourse1\UdemyCourse1\obj\Debug\UdemyCourse1.csproj.CoreCompileInputs.cache
+C:\Users\thomas.rivera\Desktop\C#\Udemy\UdemyCourse1\UdemyCourse1\obj\Debug\UdemyCourse1.exe
+C:\Users\thomas.rivera\Desktop\C#\Udemy\UdemyCourse1\UdemyCourse1\obj\Debug\UdemyCourse1.pdb
