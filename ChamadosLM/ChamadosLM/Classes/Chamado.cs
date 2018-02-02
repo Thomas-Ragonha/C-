@@ -13,14 +13,14 @@ namespace ChamadosLM.Classes
         public int IDUsuarioCriacaoChamado { get; set; }
         public string DescricaoChamado { get; set; }
         public string ResolucaoChamado { get; set; }
-        public DateTime DataCriacaoChamado { get; set; }
-        public DateTime DataFechamentoChamado { get; set; }
-        public char StatusChamado { get; set; }
+        public string DataCriacaoChamado { get; set; }
+        public string DataFechamentoChamado { get; set; }
+        public string StatusChamado { get; set; }
 
         public Chamado()
         {
-            this.StatusChamado = 'A';
-            this.DataCriacaoChamado = DateTime.Now;
+            this.StatusChamado = "Aberto";
+            this.DataCriacaoChamado = DateTime.Now.ToString();
         }
 
     }
